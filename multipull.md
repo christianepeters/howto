@@ -15,7 +15,7 @@ A neat way to do all at once is to run:
 find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;
 ```
 
-I created an alias in `~/.bash_profile` called `multipull`. Alternatively you can use this [bash script](code/multipull.sh) and run it on the top level (in my case `folder-containing-git-repos`).
+I created an alias in `~/.bash_profile` called `multipull`.
 
 ---
 Credit: https://gabac.blog/posts/git-pull-many-repos-at-once/
