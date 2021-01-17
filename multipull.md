@@ -1,16 +1,14 @@
-# Git pull multiple repositories at once
+# Pull multiple git repositories at once
 
-I'd like to pull multiple git repositories at once.
+I'd like to pull multiple git repositories at once. I could `cd` in each of the repositories and run `git pull`.
 
 ```
 folder-containing-git-repos
-├── folder1
-├── folder2
-├── folder3
-├── folder4
+├── gitrepo1
+├── gitrepo2
+├── gitrepo3
+├── gitrepo4
 ```
-
-I could `cd` in each of the repositories and run `git pull`.
 
 A neat way to do all at once is to run:
 ```
