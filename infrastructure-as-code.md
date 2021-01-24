@@ -19,6 +19,7 @@ This is a set of pointers to get started with containers, container orchestratio
        * [minikube][minikube]
        * [A Kubernetes Basics Tutorial][k8-minikube-lab]
        * [k3s][k3s]: Lightweight Kubernetes for IoT & Edge computing
+       * [Helm](https://helm.sh/): Package management for kubernetes
    * [Amazon Elastic Container Service][ecs]
        * [AWS ECS Kubernetes lab][ecs-k8]
        * [MicroK8S][microk8s] (limited free tier k8 cluster)
@@ -29,6 +30,7 @@ This is a set of pointers to get started with containers, container orchestratio
    * Service Meshs
        * [Istio][istio]
            * [Istio on IBM Cloud Learn Hub][ibm-istio]
+       * [Consul](https://www.consul.io/)
        * [kuma](https://kuma.io/)
 * Cluster Management
    * [Rancher][rancher]
