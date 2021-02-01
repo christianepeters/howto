@@ -71,11 +71,6 @@ Don't reboot. Just start the installation process using the GUI of the live CD:
 
 We need to make sure that the boot process knows how to decrypt the LUKS partition.
 
-Check the UUID of the LUKS drive:
-```
-$ sudo blkid /dev/nvme0n1p5
-/dev/nvme0n1p5: UUID="93fdc766-4f72-4ed8-a1d0-887343d17cc9" TYPE="ext4" PARTUUID="70c9144b-ba22-4c3c-9861-b5885174dc0d"
-```
 Mount `root` and `boot` drives and `chroot` into the main mount:
 
 ```
@@ -86,6 +81,11 @@ sudo chroot /mnt
 mount -t proc proc /proc
 mount -t sysfs sys /sys
 mount -t devpts devpts /dev/pts
+```
+
+Check the UUID of the LUKS drive:
+```
+$ sudo blkid /dev/nvme0n1p6
 ```
 
 Configure `crypttab` so boot knows where to find the LUKS partition with `sudo vi /etc/crypttab`:
