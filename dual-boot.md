@@ -11,7 +11,7 @@ I followed these guides:
 
 ## Preparation
 
-Backup Windows: I unboxed the machine, started Windows, didn't connect to the internet, provided minimum info to Microsoft, then created a recovery usb stick using the Windows recovery options. Then I started "Disk Management" and used "Shrink Volume" on the C: drive to make it as small as possible. This shold leave some unallocated space we can use for the Ubuntu partition.
+Backup Windows: I unboxed the machine, started Windows, didn't connect to the internet, provided minimum info to Microsoft, then created a recovery usb stick using the Windows recovery options. Then I started "Disk Management" and used "Shrink Volume" on the C: drive to make it as small as possible. This should leave some unallocated space we can use for the Ubuntu partition.
 
 Restart laptop. Type F2 and go to the Boot menu and change the boot order to boot first from USB.
 
@@ -21,7 +21,7 @@ Bootable USB stick: I created mine on another Linux machine using `dd` to write 
 
 Boot into the Ubuntu Live CD session.
 
-Open `gparted`. Leave Windows partitiions and EFI untouched.
+Open `gparted`. Leave Windows partitions and EFI untouched.
 
 Use the unallocated space to create an unencrypted boot partition (ext2) and a partition for the encrypted system (ext4).
 
@@ -36,7 +36,7 @@ Create LUKS container on `/dev/nvme0n1p6`.
 sudo cryptsetup luksFormat --hash=sha512 --key-size=512 --cipher=aes-xts-plain64 --verify-passphrase /dev/nvme0n1p6
 sudo cryptsetup luksOpen /dev/nvme0n1p6 CryptDisk
 ```
-I didn't overwrite the partition with zeros or random data given that the machine was brandnew. Otherwise you should use `sudo dd if=/dev/zero of=/dev/mapper/CryptDisk bs=4M`. This takes a long time, so good to be patient (which I'm not).
+I didn't overwrite the partition with zeros or random data given that the machine was brand new. Otherwise you should use `sudo dd if=/dev/zero of=/dev/mapper/CryptDisk bs=4M`. This takes a long time, so good to be patient (which I'm not).
 
 
 Setup LVM on `/dev/mapper/CryptDisk`:
