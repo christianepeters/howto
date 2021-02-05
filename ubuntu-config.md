@@ -219,8 +219,16 @@ sudo apt-get install g++ cmake patchelf m4 libgmp-dev libntl-dev
 sudo apt-get install docker docker.io
 ``` 
 
+## Headset not working
+* Open `alsamixer` and see that headset is disabled.
+* Remove `.config/pulse`:
+``` 
+mv .config/pulse .config/pulse-old
+``` 
+* Then log in and log out.
+
 ## Other programs
 * Install
 ``` 
-sudo apt-get install aspell aspell-de aspell-en aspell-fr aspell-nl audacious baobab bash-completion bzip2 calibre cheese curl elinks ffmpeg ftp gedit gparted lame meld openssl pandoc pari-gp subversion texlive-base unison vlc
+sudo apt-get install aspell aspell-de aspell-en aspell-fr aspell-nl audacious baobab bash-completion bzip2 calibre cheese curl elinks ffmpeg ftp gedit gparted lame libreoffice mplayer meld mplayer openssl pandoc pari-gp subversion texlive-base unison vlc
 ``` 
