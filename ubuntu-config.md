@@ -230,5 +230,6 @@ mv .config/pulse .config/pulse-old
 ## Other programs
 * Install
 ``` 
-sudo apt-get install aspell aspell-de aspell-en aspell-fr aspell-nl audacious baobab bash-completion bzip2 calibre cheese curl elinks ffmpeg ftp gedit gparted lame libreoffice mplayer meld mplayer openssl pandoc pari-gp subversion texlive-base unison vlc
+sudo apt-get install aspell aspell-de aspell-en aspell-fr aspell-nl audacious audacity baobab bash-completion bzip2 calibre cheese curl elinks ffmpeg ftp gedit gparted lame libreoffice mplayer meld mplayer openssl pandoc pari-gp pavucontrol subversion texlive-base unison vlc
 ``` 
+
