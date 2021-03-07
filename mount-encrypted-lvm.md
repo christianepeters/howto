@@ -11,7 +11,7 @@ nvme0n1
 ```
 3. Unlock encrypted partition:
 ```
-cryptsetup open --type luks /dev/nvme0n1p6 crypto_LUKS
+sudo cryptsetup open --type luks /dev/nvme0n1p6 crypto_LUKS
 Enter passphrase for /dev/nvme0n1p6:
 ```
 
@@ -40,4 +40,22 @@ NAME               FSTYPE      LABEL                    UUID                    
     └─vg0-lv0_scratch
 ```
 
-
+7. Mount
+```
+sudo mount /dev/mapper/vg0-lv1_root /mnt
+sudo mount /dev/nvme0n1p5 /mnt/boot
+sudo mount /dev/nvme0n1p1 /mnt/boot/efi
+sudo mount --bind /dev /mnt/dev
+sudo chroot /mnt
+```
+8. Bind `proc`, `sys`, and `pts`:
+```
+mount -t proc proc /proc
+mount -t sysfs sys /sys
+mount -t devpts devpts /dev/pts
+```
+9. Update grub
+```
+grub-install /dev/sda
+update-grub
+```
