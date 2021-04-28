@@ -9,7 +9,7 @@
 On Windows and MacOS you can use [Docker for Desktop][DockerDesktop].
 
 ## Install Docker on Ubuntu Linux
-On Ubuntu follow the steps below which are also summarized in [this script](scripts/docker.sh).
+On Ubuntu follow the steps below which are also summarized in [this script](code/docker.sh).
 ```
 sudo apt update
 sudo apt install docker.io
