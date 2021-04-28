@@ -37,9 +37,9 @@ NAME               FSTYPE      LABEL                    UUID                    
 └─nvme0n1p6        crypto_LUKS                          XXX
   └─crypto_LUKS    LVM2_member                          XXX
     ├─vg0-lv0_swap swap                                 XXX
-    ├─vg0-lv0_root ext4                                 XXX
-    ├─vg0-lv0_home ext4                                 XXX
-    └─vg0-lv0_scratch
+    ├─vg0-lv1_root ext4                                 XXX
+    ├─vg0-lv2_home ext4                                 XXX
+    └─vg0-lv3_scratch
 ```
 
 8. Mount
@@ -61,5 +61,3 @@ mount -t devpts devpts /dev/pts
 grub-install
 update-grub
 ```
-
-
