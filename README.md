@@ -18,4 +18,5 @@
 * [Infrastructure as Code](infrastructure-as-code.md): pointers to started with containers, container orchestration, kubernetes (k8), management of (kubernetes) clusters, Terraform, Ansible, ..
 
 ## IDEs
+* [Code-server](code-server.md): portable IDE
 * [Jupyter Notebook](jupyter.md): python including all useful packages ready to use in the browser

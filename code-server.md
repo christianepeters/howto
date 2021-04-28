@@ -1,16 +1,28 @@
 # Code-server : portable IDE
 
 Code-server project:
+
 * Run Visual Studio Code (Open Source) in a browser:
 * Github: https://github.com/cdr/code-server
 
-My preferred installation option is as container as described [in this article](https://medium.com/oracledevs/remote-software-development-with-code-server-1d742dacbc5).
+My preferred installation option is as container as described here:
 
-DOES NOT WORK => INVESTIGATE
-Launch as
-```
-docker run -it -p 127.0.0.1:8443:8443 -v "${PWD}:/home/coder/project" codercom/code-server --allow-http --no-auth
-```
-Then access the container in your browser http://127.0.0.1:8443 .
+https://registry.hub.docker.com/r/codercom/code-server/
 
-Make sure to sync your working directory from the container to your local disk to not lose any code.
+Deploy as
+```
+mkdir -p ~/.config
+docker run -it --name code-server -p 127.0.0.1:8080:8080 \
+  -v "$HOME/.config:/home/coder/.config" \
+  -v "$PWD:/home/coder/project" \
+  -u "$(id -u):$(id -g)" \
+  -e "DOCKER_USER=$USER" \
+  codercom/code-server:latest
+```
+
+This will start a code-server container and expose it at http://127.0.0.1:8080.
+
+It will also mount the current directory into the container as `/home/coder/project` and forward your `UID/GID` so that all file system operations occur outside the container.
+
+The `$HOME/.config` is mounted at `$HOME/.config` within the container to ensure you can easily access/modify your code-server config in `$HOME/.config/code-server/config.json` outside the container.
+
