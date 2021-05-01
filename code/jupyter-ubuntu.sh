@@ -13,3 +13,5 @@ source jupyterenvironment/bin/activate
 pip install jupyter
 pip install nbconvert
 # Start with 'jupyter'
+## Remove with 
+## sudo pip3 uninstall virtualenv
