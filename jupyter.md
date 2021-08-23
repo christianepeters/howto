@@ -18,6 +18,11 @@ docker run -p 8888:8888 jupyter/scipy-notebook
 Copy the url and access the Jupyter notebook in the Browser, e.g.,
 http://127.0.0.1:8888/?token=e8b3cb1c17c618376df2c0c41a09068ebeb5a6091eeaa8ee
 
+In case you need the link again:
+```
+docker exec -it <container name or ID> jupyter notebook list
+```
+
 
 ---
 Links: https://github.com/jupyter/docker-stacks

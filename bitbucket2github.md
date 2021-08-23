@@ -14,7 +14,7 @@ Thanks a lot to bitbucket for the great service all those years.
 2. On my local machine, I cloned the bitbucket repository, then
    pointed the origin to github.
 
-To make it easy I wrote a script [bb2gh.sh](scripts/bb2gh.sh).
+To make it easy I wrote a script [bb2gh.sh](code/bb2gh.sh).
 Simply call the script with the repository name. 
 I had only a handful of repositories to move so
 I didn't further automate it.
