@@ -2,6 +2,8 @@
 
 Key words: Belgium, identity card, eID software for electronic identity
 
+Last successful test: 5-July-2022 on Ubuntu 20.04.
+
 ## Download and basic install
  
 1. Download and install the eID software `eid-archive*.deb` from
