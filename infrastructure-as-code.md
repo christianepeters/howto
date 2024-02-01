@@ -9,7 +9,10 @@ This is a collection of links and small tutorials to get started with [infrastru
 ## Basics
 
 This is a set of pointers to get started with containers, container orchestration, kubernetes (k8), and management of (kubernetes) clusters.
-
+* Providers:
+  * [Terraform](https://www.terraform.io/)
+  	* [GCP Terraform providers](https://registry.terraform.io/providers/hashicorp/google/latest/docs)
+  * [Pulumi](https://www.pulumi.com/)
 * [Docker][docker]
    * [Docker Desktop][docker-desktop] for Mac and Windows
    * [Docker Play][docker-play]
@@ -33,6 +36,7 @@ This is a set of pointers to get started with containers, container orchestratio
        * [Consul](https://www.consul.io/)
        * [kuma](https://kuma.io/)
 * Cluster Management
+   * [Anthos](https://cloud.google.com/anthos?hl=en)
    * [Rancher][rancher]
        * [Rancher architecture][rancher-arch]
 
