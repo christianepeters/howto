@@ -33,6 +33,7 @@ Last successful test: 23-Feb-2024 on Ubuntu 22.04.3 LTS (jammy).
 If I understand [this eid note](https://eid.belgium.be/nl/faq/waarom-het-gebruik-van-de-eid-niet-mogelijk-met-software-snap-enof-flatpak#7636)
 correctly then there's a problem with snap-based Firefox and
 Chrome accessing the PKCS#11 module. 
+In general [it seems to be possible to load the module manually](https://bugzilla.mozilla.org/show_bug.cgi?id=1734371). The quick and dirty approach below.
 
 ## Use eid on Chrome.
 
