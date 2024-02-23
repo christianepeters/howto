@@ -2,7 +2,7 @@
 
 Key words: Belgium, identity card, eID software for electronic identity
 
-Last successful test: 5-July-2022 on Ubuntu 20.04.
+Last successful test: 23-Feb-2024 on Ubuntu 22.04.3 LTS (jammy).
 
 ## Download and basic install
  
@@ -27,15 +27,35 @@ Last successful test: 5-July-2022 on Ubuntu 20.04.
 ``` 
    which should show the info stored on the card.
 
-## Get it to work in Firefox. 
 
-5. Get add-on from https://addons.mozilla.org/en-US/firefox/addon/belgium-eid/ 
+**Note**: If I understand [this eid note](https://eid.belgium.be/nl/faq/waarom-het-gebruik-van-de-eid-niet-mogelijk-met-software-snap-enof-flatpak#7636)
+correctly then there's a problem with snap-based Firefox and
+Chrome accessing the PKCS#11 module. 
 
-6. Get certificates from http://repository.eid.belgium.be/certificates.php
+## Use eid on Chrome.
+
+You need to install
+[Chrome](https://www.google.com/chrome/?platform=linux) directly
+from the Google website in order for the browser to be able to
+access the PKCS#11 module (ie the smart card = your eid). 
+
+5. Go to test page: https://iamapps.belgium.be/tma/
+
+
+## Use eid on Firefox. 
+
+5. Install Firefox directly (not via snap). https://www.mozilla.org/nl/firefox/linux/
+
+6. Get add-on from https://addons.mozilla.org/en-US/firefox/addon/belgium-eid/ 
+
+7. Get certificates from http://repository.eid.belgium.be/certificates.php
 	1) Belgian root CA3
 	2) Belgian root CA4, Governemenr CA
 	3) Cybertrust, Belgian root CA4
    
-7. Restart firefox
+8. Restart firefox
 
-8. Test page: https://iamapps.belgium.be/tma/
+9. Test page: https://iamapps.belgium.be/tma/
+
+
+
