@@ -28,34 +28,36 @@ Last successful test: 23-Feb-2024 on Ubuntu 22.04.3 LTS (jammy).
    which should show the info stored on the card.
 
 
-**Note**: If I understand [this eid note](https://eid.belgium.be/nl/faq/waarom-het-gebruik-van-de-eid-niet-mogelijk-met-software-snap-enof-flatpak#7636)
+## Using the eiD module with your browsers
+
+If I understand [this eid note](https://eid.belgium.be/nl/faq/waarom-het-gebruik-van-de-eid-niet-mogelijk-met-software-snap-enof-flatpak#7636)
 correctly then there's a problem with snap-based Firefox and
 Chrome accessing the PKCS#11 module. 
 
 ## Use eid on Chrome.
 
-You need to install
+5. You need to install
 [Chrome](https://www.google.com/chrome/?platform=linux) directly
 from the Google website in order for the browser to be able to
-access the PKCS#11 module (ie the smart card = your eid). 
+access the PKCS#11 module (ie the smart card = your eid card). 
 
-5. Go to test page: https://iamapps.belgium.be/tma/
+6. Go to test page: https://iamapps.belgium.be/tma/
 
 
 ## Use eid on Firefox. 
 
-5. Install Firefox directly (not via snap). https://www.mozilla.org/nl/firefox/linux/
+7. Install Firefox directly (not via snap). https://www.mozilla.org/nl/firefox/linux/
 
-6. Get add-on from https://addons.mozilla.org/en-US/firefox/addon/belgium-eid/ 
+8. Get add-on from https://addons.mozilla.org/en-US/firefox/addon/belgium-eid/ 
 
-7. Get certificates from http://repository.eid.belgium.be/certificates.php
+9. Get certificates from http://repository.eid.belgium.be/certificates.php
 	1) Belgian root CA3
 	2) Belgian root CA4, Governemenr CA
 	3) Cybertrust, Belgian root CA4
    
-8. Restart firefox
+10. Restart firefox
 
-9. Test page: https://iamapps.belgium.be/tma/
+11. Test page: https://iamapps.belgium.be/tma/
 
 
 
