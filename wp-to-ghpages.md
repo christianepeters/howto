@@ -17,7 +17,7 @@ It took me the best part of a rainy Sunday.
 
 1. [Export Wordpress site and convert to markdown](#1-export)
 2. [Setup Github Pages](#2-setup-github-pages)
-3. [Transfer Domain Name](3-transfer-domain-name)
+3. [Transfer Domain Name](#3-transfer-domain-name)
 4. Delete Wordpress site and cancel subscription.
 
 
@@ -74,15 +74,18 @@ figure out how to enable blogging. That's for another time.
 
 ## 3. Transfer Domain Name
 
-I want to use a custom domain with my github page:
+I want to use a custom domain with my github page. TODO:
+
+Step 1: move domain name to different registrar.
+- Find cheap domain registrar
+- Follow https://wordpress.com/support/domains/transfer-domain-registration/
+- Transfer code needed
+
+Step 2: 
+Configure github pages to use custom domain
 https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
 
-When adding my domain name to the custom page name, the DNS check fails.
-https://github.com/christianepeters/christianepeters.github.io/settings/pages
 
-TODO figure out how to move the domain from wordpress to ??
-
-Follow https://wordpress.com/support/domains/transfer-domain-registration/
 
 
 ##### Updated: 28 April 2024
