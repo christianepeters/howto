@@ -2,7 +2,7 @@
 
 Key words: Belgium, identity card, eID software for electronic identity
 
-Last successful test: 23-Feb-2024 on Ubuntu 22.04.3 LTS (jammy).
+Last successful test: 2-May-2024 on Ubuntu 22.04.3 LTS (jammy).
 
 ## Download and basic install
  
@@ -31,34 +31,16 @@ Last successful test: 23-Feb-2024 on Ubuntu 22.04.3 LTS (jammy).
 ## Using the eiD module with your browsers
 
 If I understand [this eid note](https://eid.belgium.be/nl/faq/waarom-het-gebruik-van-de-eid-niet-mogelijk-met-software-snap-enof-flatpak#7636)
-correctly then there's a problem with snap-based Firefox and
-Chrome accessing the PKCS#11 module. 
-In general [it seems to be possible to load the module manually](https://bugzilla.mozilla.org/show_bug.cgi?id=1734371). The quick and dirty approach below.
+correctly then there's a problem with snap-based Firefox and Chrome accessing the PKCS#11 module. 
 
-## Use eid on Chrome.
+In February 2024 the solution was to download Chrome directly from the Google website. This no longer works on May 2nd 2024. Probably some chrome update broke it.
+Now the [advice on the eid website](https://eid.belgium.be/nl/aanmelden-met-eid#7311) changed again.
 
-5. You need to install
-[Chrome](https://www.google.com/chrome/?platform=linux) directly
-from the Google website in order for the browser to be able to
-access the PKCS#11 module (ie the smart card = your eid card). 
+To access the PKCS#11 module (ie the smart card = your eid card) from **Chrome** you need to close the browser, then execute 
+```
+./beid-update-nssdb
+```
 
-6. Go to test page: https://iamapps.belgium.be/tma/
+6. Open Chrome and go to test page: https://iamapps.belgium.be/tma/
 
-
-## Use eid on Firefox. 
-
-7. Install Firefox directly (not via snap). https://www.mozilla.org/nl/firefox/linux/
-
-8. Get add-on from https://addons.mozilla.org/en-US/firefox/addon/belgium-eid/ 
-
-9. Get certificates from http://repository.eid.belgium.be/certificates.php
-	1) Belgian root CA3
-	2) Belgian root CA4, Governemenr CA
-	3) Cybertrust, Belgian root CA4
-   
-10. Restart firefox
-
-11. Test page: https://iamapps.belgium.be/tma/
-
-
-
+Note I'm no longer bothering with Firefox. I couldn't get it to work there and I'm sticking to Chrome for now.
