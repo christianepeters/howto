@@ -7,6 +7,7 @@
 * [Pull multiple git repositories at once](multipull.md)
 
 ### IDEs
+* [Project IDX](idx.md): online IDE developed based on Visual Studio Code
 * [Code-server](code-server.md): portable IDE
 * [Jupyter Notebook](jupyter.md): python including all useful packages ready to use in the browser
 
