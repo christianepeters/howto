@@ -44,6 +44,15 @@
     };
     ```
 
-5. Connect to Github, paste the one-time verification code in IDX into the authorization request, then confirm using Github 2-factor auth.
+5. Connect workspace to a Github repository.
 
-
+    ```
+    git init
+    git branch -M main
+    git remote add origin https://github.com/christianepeters/tink-playground.git
+    git add .gitignore 
+    git add src/aead.py 
+    git commit -am "test files"
+    git push -u origin main
+    ```
+6. When pushing to the main branch the IDE will initiate an authorization request with a one-time password. I also had to confirm login to my account using Github 2-factor auth.
