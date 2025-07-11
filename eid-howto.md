@@ -2,7 +2,7 @@
 
 Key words: Belgium, identity card, eID software for electronic identity
 
-Last successful test: 2-May-2024 on Ubuntu 22.04.3 LTS (jammy).
+Last successful test: Jul 7, 2025 on Ubuntu 22.04.3 LTS (jammy).
 
 ## Download and basic install
  
