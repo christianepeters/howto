@@ -29,7 +29,7 @@ Whatever works for you, but don't go further without a **backup**.
 	```
 	sudo do-release-upgrade -d
 	```
-4. Restart, then confirm upgrade to Release 22.04:
+4. Restart, then confirm upgrade to new release:
 	```
 	lsb_release -a
 	```
