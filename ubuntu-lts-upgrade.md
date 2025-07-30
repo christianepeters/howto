@@ -1,12 +1,12 @@
-# LTS Release Upgrade: Ubuntu 20.04 to Ubuntu 22.04
+# LTS Release Upgrade: Ubuntu 22.04 to Ubuntu 24.04
 
-It's a new year and time to upgrade my Ubuntu machine.
-[Ubuntu 22.04](https://www.releases.ubuntu.com/22.04/) was
-released almost a year ago, but somehow time flies.
+Time to upgrade my Ubuntu machine.
+[Ubuntu 24.04](https://www.releases.ubuntu.com/24.04/) was
+released more than a year ago, but somehow time flies.
 
 No need to worry. LTS releases are supported for a long time,
-with their security updates going even into the next decade in
-the case of 20.04.
+with their expanded security updates going even into the next decade in
+the case of 24.04.
 For more info see here https://ubuntu.com/about/release-cycle
 
 Before you start, ensure the machine is **backed up**.
@@ -23,6 +23,8 @@ Whatever works for you, but don't go further without a **backup**.
 	```
 	sudo apt install update-manager-core
 	```
+
+
 3. Time to start the upgrade
 	```
 	sudo do-release-upgrade -d
@@ -31,5 +33,18 @@ Whatever works for you, but don't go further without a **backup**.
 	```
 	lsb_release -a
 	```
+
+5. Troubleshoot: if on step 3 you encounter an error that there's
+not enough disk space
+	```
+	Not enough free disk space
+	
+	The upgrade has aborted. The upgrade needs a total of 4,729 M free
+	space on disk '/'. Please free at least an additional 273 M of disk
+	space on '/'. Empty your trash and remove temporary packages of
+	former installations using 'sudo apt-get clean'.
+	```
+	then use [these steps](./ubuntu-free-up-space.md) to free up space.
+
 
 Tested successfully on 2-Jan-2023.
