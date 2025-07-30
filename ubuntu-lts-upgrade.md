@@ -46,5 +46,21 @@ not enough disk space
 	```
 	then use [these steps](./ubuntu-free-up-space.md) to free up space.
 
+6. After the upgrade I ran `apt update` and got some funny Chrome
+issues which I fixed by removing all chrome repos from
+`/etc/apt/sources.list.d`:
+	```
+	sudo rm google-chrome.*
+	```
+	then reinstalled Chrome and all errors vanished.
+	```
+	cd ~/Downloads
+	sudo dpkg -i google-chrome-stable_current_amd64.deb
+	sudo apt-get install -f
+	```
 
-Tested successfully on 2-Jan-2023.
+7. For other funny quirks, e.g., removing the Terminal Bell which keeps
+coming back with every release upgrade, see
+[my configuration of Ubuntu](./ubuntu-config.md).
+
+Tested successfully on 30-Jul-2025.
