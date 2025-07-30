@@ -1,5 +1,9 @@
 # My first Python project using Google IDX
 
+Update July 2025: Apparently the product is now called Firebase
+Studio https://firebase.studio/. I have not checked that one out.
+This tutorial is for when it was still called Google IDX.
+
 ## Resources
 
 * Project IDX: https://idx.google.com/
