@@ -55,6 +55,8 @@ I used [Karl Broman](https://kbroman.org/about.html)'s
 [template](https://kbroman.org/simple_site/pages/independent_site)
 and excellent guidance to set up my [github page](https://christianepeters.github.io/).
 
+The [README](https://github.com/christianepeters/christianepeters.github.io/blob/master/README.md) has the details.
+
 Using Jekyll and Bundler locally I can test pages in my browser.
 ```
 sudo apt install jekyll
@@ -67,25 +69,21 @@ bundle exec jekyll serve
 ```
 and check the pages at http://127.0.0.1:4000/.
 
-Worst part of the move was replacing the wordpress links and also
+Most time-consumping part of the move was replacing the wordpress links and also
 converting the blog posts into one static site. I was too lazy to
 figure out how to enable blogging. That's for another time.
 
 
 ## 3. Transfer Domain Name
 
-I want to use a custom domain with my github page. TODO:
+I then transferred the domain registration `cbcrypto.org` from wordpress to this github page.
 
 Step 1: move domain name to different registrar.
-- Find cheap domain registrar
+- Find domain registrar
 - Follow https://wordpress.com/support/domains/transfer-domain-registration/
-- Transfer code needed
+- Use transfer code
 
 Step 2: 
-Configure github pages to use custom domain
-https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
+Configuring domain name `cbcrypto.org` on github: [README.md#custom-domain](https://github.com/christianepeters/christianepeters.github.io/blob/master/README.md#custom-domain)
 
 
-
-
-##### Updated: 28 April 2024
