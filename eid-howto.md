@@ -2,34 +2,39 @@
 
 Key words: Belgium, identity card, eID software for electronic identity
 
-Last successful test: Jul 7, 2025 on Ubuntu 22.04.3 LTS (jammy).
+Last successful test: Jul 7, 2025 on Ubuntu 26.04 (Resolute Raccoon).
 
 ## Download and basic install
  
 1. Download and install the eID software `eid-archive*.deb` from
-	https://eid.belgium.be/en/linux-eid-software-installation
+https://eid.belgium.be/en/linux-eid-software-installation
 
 2. Run deb file to point apt-get to the right repositories
 
 ``` 
-    sudo gdebi eid-archive_*.deb 
-    sudo apt-get update
+sudo dpkg -i eid-archive_*.deb 
+sudo apt update
 ``` 
 
 3. Install `eid-viewer` and `eid-mw`.
 ``` 
-    sudo apt-get install eid-viewer eid-mw
+sudo apt install eid-viewer eid-mw
 ``` 
 
 4. Test if eiD viewer works. Plug in card reader, then open
 ``` 
-    eid-viewer # can also be found under Applications/Accessories
+eid-viewer # can also be found under Applications/Accessories
 ``` 
-   which should show the info stored on the card.
+which should show the info stored on the card.
 
 
 ## Using the eiD module with Chrome
 
+
+Doesn't work : need to dig into
+https://eid.belgium.be/en/faq/why-it-not-possible-use-eid-software-snap-andor-flatpak#7636
+
+OLD (doesn't work any more):
 The advice keeps changing. For the latest check [advice on the
 eid website](https://eid.belgium.be/nl/aanmelden-met-eid#7311).
 
