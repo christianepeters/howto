@@ -110,113 +110,89 @@ gsettings set org.gnome.desktop.interface clock-show-seconds true
 ``` 
 
 
-## Bash completion
-Enable completion of apt-get / aptitude install
-
-``` 
-sudo apt install bash-completion
-```
-says it's already installed
-
 ## Tor
-* Download Tor bundle from https://www.torproject.org/
 
+Download Tor bundle from https://www.torproject.org/
+```
+tar -xf tor-browser-linux-x86_64-*.tar.xz 
+```
 
 ## markdown viewer
 * install "Markview Preview Plus" extension in Chrome and allow
 * local access to URLs in the extension settings
 
 ## print to pdf
-* Install
-	``` 
-	sudo aptitude install printer-driver-cups-pdf
-	``` 
+``` 
+sudo apt install printer-driver-cups-pdf
+``` 
 
 ## iphone pictures
 * .heif to JPG conversion
-	``` 
-	sudo apt-get update
-	sudo apt-get install libheif-examples
-	``` 
-* Convert using
-	``` 
-	for file in *.heic; do heif-convert $file ${file/%.heic/.jpg}; done
-	``` 
+``` 
+sudo apt update
+sudo apt install libheif-examples
+``` 
+
+Convert using
+``` 
+for file in *.heic; do heif-convert $file ${file/%.heic/.jpg}; done
+``` 
 
 ## eid viewer
 * See my [eid-howto.md](eid-howto.md).
 
 
 ## Docker
-* Install
-	``` 
-	sudo apt-get install docker docker.io
-	``` 
+``` 
+sudo apt install docker docker.io
+``` 
 
 
 ## Other programs
-* Install
-	``` 
-	sudo apt-get install aspell aspell-de aspell-en aspell-fr aspell-nl audacious audacity baobab bash-completion bzip2 calibre cheese curl elinks ffmpeg ftp gedit gparted lame libreoffice mplayer meld mplayer openssl pandoc pari-gp pavucontrol subversion texlive-base unison vlc
-	``` 
-
-xxx not done yet (29-Aug-2026)
+``` 
+sudo apt install aspell aspell-de aspell-en aspell-fr aspell-nl audacious audacity baobab bash-completion bzip2 calibre curl elinks ffmpeg ftp gedit gparted lame libreoffice mplayer meld mplayer openssl pandoc pari-gp pavucontrol subversion texlive-base unison vlc
+``` 
 
 ## Dropbox
 
-Add to apt sources
+Download from https://www.dropbox.com/install-linux
+
 ``` 
-sudo vi /etc/apt/sources.list.d/dropbox.list
+sudo dpkg -i dropbox-*.deb
 ``` 
 
-Add the following line to this file.
-``` 
-deb [arch=i386,amd64] http://linux.dropbox.com/ubuntu bionic main
-``` 
-* save and close
-* add apt-key
-	``` 
-	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
-	``` 
-* install dropbox ubuntu 20.04 LTS
-	``` 
-	sudo apt update
-	sudo apt install python3-gpg dropbox
-	``` 
 * create mountpoint in ~/
 	``` 
 	mkdir ~/dropbox
 	``` 
 
 ## encfs (encryption)
-* Install
-	``` 
-	sudo apt-get install encfs
-	``` 
-* mount encrypted volumes
-	``` 
-	encfs /scratch/Dropbox/encrypted /home/christiane/dropbox
-	``` 
-* unmount
-	``` 
-	fusermount -u /home/christiane/dropbox
-	``` 
-## Headset not working
-* Open `alsamixer` and see that headset is disabled.
-* Remove `.config/pulse`:
-	``` 
-	mv .config/pulse .config/pulse-old
-	``` 
-* Then log in and log out.
+``` 
+sudo apt-get install encfs
+``` 
+
+mount encrypted volumes
+``` 
+encfs /scratch/Dropbox/encrypted /home/christiane/dropbox
+``` 
+
+unmount
+``` 
+fusermount -u /home/christiane/dropbox
+``` 
+
 
 ## truecrypt
-* Copy files, check signature, untar:
-	``` 
-	truecrypt-7.1a-linux-x64.tar.gz
-	truecrypt-7.1a-linux-x64.tar.gz.sig
-	``` 
-* Run:
-	``` 
-	./truecrypt-7.1a-setup-x64
-	``` 
+Copy files, check signature, untar:
+``` 
+truecrypt-7.1a-linux-x64.tar.gz
+truecrypt-7.1a-linux-x64.tar.gz.sig
+``` 
+
+Run:
+``` 
+./truecrypt-7.1a-setup-x64
+``` 
+
+
 
