@@ -1,6 +1,6 @@
 # Dual Boot Encrypted Ubuntu 20.04 and Windows 10
 
-I bought a new machine. Don't ask me why I want to keep the Windows partition in the first place. I hardly use Windows, but who knows why it's good for.
+My old notes for installing Ubuntu 20.04 alongside Windows.
 * Model: Acer Aspire 5 A515-56-70XN
 * Installation date: 31-01-2021
 
