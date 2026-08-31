@@ -117,9 +117,10 @@ Download Tor bundle from https://www.torproject.org/
 tar -xf tor-browser-linux-x86_64-*.tar.xz 
 ```
 
-## markdown viewer
-* install "Markview Preview Plus" extension in Chrome and allow
-* local access to URLs in the extension settings
+## Markdown viewer
+* Install "Markview Preview Plus" extension in Chrome
+([Chrome web store link](https://chromewebstore.google.com/detail/markdown-preview-plus/febilkbfcbhebfnokafefeacimjdckgl))
+* Allow local access to URLs in the extension settings
 
 ## print to pdf
 ``` 
@@ -193,6 +194,4 @@ Run:
 ``` 
 ./truecrypt-7.1a-setup-x64
 ``` 
-
-
 
