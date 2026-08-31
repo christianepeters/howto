@@ -154,34 +154,6 @@ sudo apt install docker docker.io
 sudo apt install aspell aspell-de aspell-en aspell-fr aspell-nl audacious audacity baobab bash-completion bzip2 calibre curl elinks ffmpeg ftp gedit gparted lame libreoffice mplayer meld mplayer openssl pandoc pari-gp pavucontrol subversion texlive-base unison vlc
 ``` 
 
-## Dropbox
-
-Download from https://www.dropbox.com/install-linux
-
-``` 
-sudo dpkg -i dropbox-*.deb
-``` 
-
-* create mountpoint in ~/
-	``` 
-	mkdir ~/dropbox
-	``` 
-
-## encfs (encryption)
-``` 
-sudo apt-get install encfs
-``` 
-
-mount encrypted volumes
-``` 
-encfs /scratch/Dropbox/encrypted /home/christiane/dropbox
-``` 
-
-unmount
-``` 
-fusermount -u /home/christiane/dropbox
-``` 
-
 
 ## truecrypt
 Copy files, check signature, untar:
