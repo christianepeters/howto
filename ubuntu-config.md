@@ -18,6 +18,7 @@ sudo update-alternatives --config editor
 
 ## Terminal bell
 * Go into terminal preferences and disable terminal bell in profiles
+* disable `Restore Session` and `Restore Window Size`
 
 
 ## Chrome

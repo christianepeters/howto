@@ -15,14 +15,14 @@ A neat way to do all at once is to run:
 find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;
 ```
 
-I created an alias in `~/.profile` called `multipull`.
+I created an alias in `~/.bashrc` called `multipull`.
 ```
 alias multipull='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;'
 ```
 then refresh with
 
 ```
-source ~/.profile
+source ~/.bashrc
 ```
 
 ---
