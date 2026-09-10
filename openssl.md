@@ -87,13 +87,12 @@ To remove the custom build and revert back to system OpenSSL:
 ```bash
 # 1. Remove the build directory and source repo
 rm -rf "${HOME}/openssl35" ./openssl
-```
 
 # 2. Revert PATH and LD_LIBRARY_PATH in your current session (or start a new shell)
-```
 export PATH=$(echo "${PATH}" | sed -e "s|${HOME}/openssl35/bin:||g")
 export LD_LIBRARY_PATH=$(echo "${LD_LIBRARY_PATH}" | sed -e "s|${HOME}/openssl35/lib64:||g")
 ```
+
 Verify you are back on the system version:
 
 ```
