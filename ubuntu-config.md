@@ -132,7 +132,7 @@ sudo apt install printer-driver-cups-pdf
 * .heif to JPG conversion
 ``` 
 sudo apt update
-sudo apt install libheif-examples
+sudo apt install libheif-examples libheif-plugin-libde265
 ``` 
 
 Convert using
