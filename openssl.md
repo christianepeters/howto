@@ -1,4 +1,4 @@
-# Installing OpenSSL 3.5+
+# Installing OpenSSL 3.4+
 
 Many Operating systems still come with older openssl versions that have no PQC algorithm support.
 ```text
