@@ -11,8 +11,11 @@ OpenSSL 3.0.13 30 Jan 2024 (Library: OpenSSL 3.0.13 30 Jan 2024)
 If you have Docker installed, you can alias openssl to a container with post-quantum support with zero build time:
 
 ```
-alias openssl='docker run --rm -v "${PWD}":/work -w /work openquantumsafe/curl openssl'
+# Add alias to ~/.bashrc so it persists across SSH disconnects and new shells
+echo "alias openssl='docker run --rm -v \"\${PWD}\":/work -w /work openquantumsafe/curl openssl'" >> ~/.bashrc
+source ~/.bashrc
 ```
+
 
 2. Test
 ```bash
@@ -49,6 +52,7 @@ To revert back to your host machine's original OpenSSL:
 
 ```bash
 unalias openssl
+sed -i '/openquantumsafe\/curl/d' ~/.bashrc
 docker rmi openquantumsafe/curl
 ```
 
